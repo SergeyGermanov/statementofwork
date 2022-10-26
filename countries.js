@@ -1,11 +1,26 @@
 // Need to be changed to an Array of Objects
 
+let countries = [
+  {
+    id: 001,
+    name: "Afghanistan",
+    phoneCode: "1234",
+    flagCode: "AF"
+  },
+  {
+    id: 002,
+    name: "New Zealand",
+    phoneCode: "64",
+    flagCode: "NZ"
+  },
+];
+
 <div class="two wide field">
-    <div class="ui fluid search selection dropdown">
-        <input type="hidden" name="country" />
-        <i class="dropdown icon"></i>
-        <div class="default text">Select Country</div>
-        <div class="menu">
+  <div class="ui fluid search selection dropdown">
+    <input type="hidden" name="country" />
+    <i class="dropdown icon"></i>
+    <div class="default text">Select Country</div>
+    {/* <div class="menu">
             <div class="item" data-value="af">
                 <i class="af flag"></i>Afghanistan
             </div>
@@ -732,8 +747,8 @@
             <div class="item" data-value="zw">
                 <i class="zw flag"></i>Zimbabwe
             </div>
-        </div>
-    </div>
+        </div> */}
+  </div>
 </div>
 
 //  need to add country codes to the object above

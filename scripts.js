@@ -1,3 +1,6 @@
+// to do (Sergey):
+// add a JS function to populate dropdown for Countries and Timezones from Object files
+
 function generatePDF() {
 
     // Landscape export, 2×4 inches
