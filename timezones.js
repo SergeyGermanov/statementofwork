@@ -4,19 +4,19 @@
 // Hours difference is relative to NZ time
 
 let timezones = [
-    {
-      id: 001,
-      name: "AEST",
-      hoursDifference: -3,
-      daylightSaving: true
-    },
-    {
-      id: 002,
-      name: "EST",
-      timezones: -12,
-      daylightSaving: true
-    },
-  ];
+  {
+    id: "timezone1",
+    name: "(GMT+10:00) Canberra, Melbourne, Sydney",
+    hoursDifference: -2,
+    daylightSaving: true
+  },
+  {
+    id: "timezone2",
+    name: "(GMT+12:00) Auckland, Wellington",
+    hoursDifference: 0,
+    daylightSaving: true
+  },
+];
 
 {/* <div class="six wide field">
   <select class="ui search dropdown">

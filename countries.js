@@ -2,25 +2,26 @@
 
 let countries = [
   {
-    id: 001,
-    name: "Afghanistan",
-    phoneCode: "1234",
-    flagCode: "AF"
+    id: "country1",
+    name: "Australia",
+    phoneCode: "61",
+    flagCode: "au"
   },
   {
-    id: 002,
+    id: "country2",
     name: "New Zealand",
     phoneCode: "64",
-    flagCode: "NZ"
+    flagCode: "nz"
   },
 ];
 
-<div class="two wide field">
+
+{/* <div class="two wide field">
   <div class="ui fluid search selection dropdown">
     <input type="hidden" name="country" />
     <i class="dropdown icon"></i>
-    <div class="default text">Select Country</div>
-    {/* <div class="menu">
+    <div class="default text">Select Country</div> */}
+{/* <div class="menu">
             <div class="item" data-value="af">
                 <i class="af flag"></i>Afghanistan
             </div>
@@ -748,8 +749,8 @@ let countries = [
                 <i class="zw flag"></i>Zimbabwe
             </div>
         </div> */}
-  </div>
-</div>
+// </div >
+// </div >
 
 //  need to add country codes to the object above
 {/* <select name="countryCode" id="">

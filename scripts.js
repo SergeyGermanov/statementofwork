@@ -1,5 +1,41 @@
 // to do (Sergey):
-// add a JS function to populate dropdown for Countries and Timezones from Object files
+
+// functions that populate dropdown for Countries and Timezones from Object files
+
+let countriesDropdown = (countries) => {
+    let dropdown = document.querySelectorAll('.countriesDropdown');
+    let optionsString = "";
+
+    countries.forEach((element, index) => {
+        optionsString += `<div class="item" value="${index}"><i class="${element.flagCode} flag"></i>${element.name}</div>`;
+    });
+
+    dropdown.forEach(element => {
+        element.innerHTML = optionsString;
+    });
+}
+
+
+let timezoneDropdown = (timezones) => {
+    let dropdown = document.querySelectorAll('.timezonesDropdown');
+    let optionsString = "";
+
+    timezones.forEach((element, index) => {
+        optionsString += `<div class="item" value="${index}">${element.name}</div>`;
+    });
+
+    dropdown.forEach(element => {
+        element.innerHTML = optionsString;
+    });
+}
+
+//populates all the country and timezone dropdowns
+document.addEventListener("DOMContentLoaded", () => {
+    countriesDropdown(countries);
+    timezoneDropdown(timezones);
+});
+
+// PDF library use
 
 function generatePDF() {
 
@@ -25,6 +61,6 @@ function generatePDF() {
     );
 }
 
-// jQuery
+// Semantics for dropdowns jQuery
 
 $(".ui.dropdown").dropdown();
