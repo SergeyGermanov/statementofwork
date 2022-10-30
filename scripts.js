@@ -7,7 +7,7 @@ let countriesDropdown = (countries) => {
     let optionsString = "";
 
     countries.forEach((element, index) => {
-        optionsString += `<div class="item" value="${index}"><i class="${element.flagCode} flag"></i>${element.name}</div>`;
+        optionsString += `<div class="item" data-value="${element.name}"><i class="${element.flagCode} flag"></i>${element.name}</div>`;
     });
 
     dropdown.forEach(element => {
@@ -21,7 +21,7 @@ let timezoneDropdown = (timezones) => {
     let optionsString = "";
 
     timezones.forEach((element, index) => {
-        optionsString += `<div class="item" value="${index}">${element.name}</div>`;
+        optionsString += `<div class="item" data-value="${element.name}">${element.name}</div>`;
     });
 
     dropdown.forEach(element => {
@@ -64,3 +64,65 @@ function generatePDF() {
 // Semantics for dropdowns jQuery
 
 $(".ui.dropdown").dropdown();
+
+// on button click - Generate SoW
+
+const form = document.querySelector("#sowForm");
+const termConditions = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas!";
+
+//create Div after clicking "Generate SoW"
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    let summaryString = '';
+    let arr = [...form.elements];
+
+    let summary = document.querySelector("#summary");
+
+    //create String with results
+    arr.forEach(element => {
+        (element.value !== "") && (summaryString += `<br> ${element.name} ${element.value}`);
+    });
+
+    //add summary to div
+    (summaryString !== "") && (summary.innerHTML = `<div class="ui positive message" id="pdfSave">
+                       <a class="ui teal right corner label" onclick="clipboardFunc()">
+                        <i class="copy link icon" ></i>
+                       </a>                        
+                        <div id="clipboardText">
+                        ${summaryString} 
+                        <br>
+                        Terms and Conditions:
+                        ${termConditions}                       
+                        </div>
+                     </div>
+                     <div class="fluid ui vertical animated button" tabindex="0" onclick="generatePDF()">
+                     <div class="hidden content">PDF <i class="file pdf icon"></i></div>
+                     <div class="visible content">Download</div>
+                   </div>
+                   </div>
+                     `);
+
+    summaryString = "";
+});
+
+//clipboard copy button
+
+let clipboardFunc = () => {
+
+    let clipboardText = document.querySelector("#clipboardText").innerHTML;
+    let copyText = `${clipboardText.replaceAll(
+        "<br>",
+        "\n"
+    )}`;
+
+    function listener(e) {
+        e.clipboardData.setData("text/html", copyText);
+        e.clipboardData.setData("text/plain", copyText);
+        e.preventDefault();
+    }
+
+    document.addEventListener("copy", listener);
+    document.execCommand("copy");
+    document.removeEventListener("copy", listener);
+};

@@ -20,184 +20,254 @@
 </head>
 
 <body>
-  <div class="ui very padded segment">
-    <div class="ui padded segment">
-      <div class="ui form">
-        <div class="field">
-          <label>Name</label>
-          <div class="two fields">
-            <div class="field">
-              <input type="text" id="clientName" name="Client" placeholder="Client Name" />
-            </div>
-            <div class="field">
-              <input type="text" id="connectionName" name="Connection" placeholder="Connection Name" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <form id="sowForm">
 
-    <!-- add a full names and their contacts to the dropdown values -->
-
-    <div class="ui padded segment">
-      <div class="ui form">
-        <div class="field">
-          <div class="ui attached message">
-            <div class="header">Cin7 IE/AI:</div>
-          </div>
-          <div class="ui fluid selection dropdown">
-            <input type="hidden" name="user" />
-            <i class="dropdown icon"></i>
-            <div class="default text">Select IE/IA</div>
-            <div class="menu">
-              <div class="item" data-value="Andrew">
-                <img class="ui mini avatar image"
-                  src="https://ca.slack-edge.com/T03UKCQMF-U022126R8BZ-42e4a06d8ffb-72" />
-                Andrew Klossner
+    <div class="ui very padded segment">
+      <div class="ui padded segment">
+        <div class="ui form">
+          <div class="field">
+            <label>Name</label>
+            <div class="two fields">
+              <div class="field">
+                <input type="text" id="clientName" name="Client Name:" placeholder="Client Name" />
               </div>
-              <div class="item" data-value="Chiraag">
-                <img class="ui mini avatar image"
-                  src="https://ca.slack-edge.com/T03UKCQMF-U028YN96679-eddd25b08ff8-512" />
-                Chiraag Jivanji
-              </div>
-              <div class="item" data-value="jenny">
-                <img class="ui mini avatar image"
-                  src="https://ca.slack-edge.com/T03UKCQMF-U02LGAHC5R9-20d37ce06588-512" />
-                Denis Coelho
-              </div>
-              <div class="item" data-value="elliot">
-                <img class="ui mini avatar image"
-                  src="https://ca.slack-edge.com/T03UKCQMF-U01RJP9SQGM-a44d99ca3ba4-512" />
-                Desmond Chin
-              </div>
-              <div class="item" data-value="Michael">
-                <img class="ui mini avatar image"
-                  src="https://ca.slack-edge.com/T03UKCQMF-UTQ0F4ZT4-5effaa631b4f-512" />
-                Michael Xie
-              </div>
-              <div class="item" data-value="Mehul">
-                <img class="ui mini avatar image"
-                  src="https://ca.slack-edge.com/T03UKCQMF-UALDES067-b59287b16630-512" />
-                Mehul Arora
-              </div>
-              <div class="item" data-value="Louis">
-                <img class="ui mini avatar image"
-                  src="https://ca.slack-edge.com/T03UKCQMF-U01MVCSULAW-c79f27756a54-512" />
-                Louis Lan
-              </div>
-              <div class="item" data-value="christian">
-                <img class="ui mini avatar image"
-                  src="https://ca.slack-edge.com/T03UKCQMF-U01NK4UFZU0-78d4783e3ef4-512" />
-                Rahul Bakshi
-              </div>
-              <div class="item" data-value="matt">
-                <img class="ui mini avatar image"
-                  src="https://ca.slack-edge.com/T03UKCQMF-U01PTLN9JG0-6741621b97c7-512" />
-                DJ Purvis
-              </div>
-              <div class="item" data-value="justen">
-                <img class="ui mini avatar image"
-                  src="https://ca.slack-edge.com/T03UKCQMF-U01FRQ2AD5X-91136a8953e6-512" />
-                Tim Proctor
+              <div class="field">
+                <input type="text" id="connectionName" name="Connection Name:" placeholder="Connection Name" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Tech contact need to make it to be added by JS from the extra file-->
+      <!-- add a full names and their contacts to the dropdown values -->
 
-    <!-- To do (Sergey): 
+      <div class="ui padded segment">
+        <div class="ui form">
+          <div class="field">
+            <div class="ui attached message">
+              <div class="header">Cin7 IE/AI:</div>
+            </div>
+            <div class="ui fluid selection dropdown">
+              <input type="hidden" name="IE/IA name:" />
+              <i class="dropdown icon"></i>
+              <div class="default text">Select IE/IA</div>
+              <div class="menu">
+                <div class="item" data-value="Andrew">
+                  <img class="ui mini avatar image"
+                    src="https://ca.slack-edge.com/T03UKCQMF-U022126R8BZ-42e4a06d8ffb-72" />
+                  Andrew Klossner
+                </div>
+                <div class="item" data-value="Chiraag">
+                  <img class="ui mini avatar image"
+                    src="https://ca.slack-edge.com/T03UKCQMF-U028YN96679-eddd25b08ff8-512" />
+                  Chiraag Jivanji
+                </div>
+                <div class="item" data-value="jenny">
+                  <img class="ui mini avatar image"
+                    src="https://ca.slack-edge.com/T03UKCQMF-U02LGAHC5R9-20d37ce06588-512" />
+                  Denis Coelho
+                </div>
+                <div class="item" data-value="elliot">
+                  <img class="ui mini avatar image"
+                    src="https://ca.slack-edge.com/T03UKCQMF-U01RJP9SQGM-a44d99ca3ba4-512" />
+                  Desmond Chin
+                </div>
+                <div class="item" data-value="Michael">
+                  <img class="ui mini avatar image"
+                    src="https://ca.slack-edge.com/T03UKCQMF-UTQ0F4ZT4-5effaa631b4f-512" />
+                  Michael Xie
+                </div>
+                <div class="item" data-value="Mehul">
+                  <img class="ui mini avatar image"
+                    src="https://ca.slack-edge.com/T03UKCQMF-UALDES067-b59287b16630-512" />
+                  Mehul Arora
+                </div>
+                <div class="item" data-value="Louis">
+                  <img class="ui mini avatar image"
+                    src="https://ca.slack-edge.com/T03UKCQMF-U01MVCSULAW-c79f27756a54-512" />
+                  Louis Lan
+                </div>
+                <div class="item" data-value="christian">
+                  <img class="ui mini avatar image"
+                    src="https://ca.slack-edge.com/T03UKCQMF-U01NK4UFZU0-78d4783e3ef4-512" />
+                  Rahul Bakshi
+                </div>
+                <div class="item" data-value="matt">
+                  <img class="ui mini avatar image"
+                    src="https://ca.slack-edge.com/T03UKCQMF-U01PTLN9JG0-6741621b97c7-512" />
+                  DJ Purvis
+                </div>
+                <div class="item" data-value="justen">
+                  <img class="ui mini avatar image"
+                    src="https://ca.slack-edge.com/T03UKCQMF-U01FRQ2AD5X-91136a8953e6-512" />
+                  Tim Proctor
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tech contact need to make it to be added by JS from the extra file-->
+
+      <!-- To do (Sergey): 
       Add one more contact fields into "Client's contact:" and separate them horizontaly -->
 
-    <div class="ui padded segment">
-      <div class="ui form">
-        <div class="fields">
-          <div class="sixteen wide field">
-            <div class="ui blue message">
-              <div class="header">Client's contact:</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="fields">
-          <div class="eight wide field">
-            <input type="text" placeholder="First Name" />
-          </div>
-          <div class="eight wide field">
-            <input type="text" placeholder="Last Name" />
-          </div>
-        </div>
-
-        <div class="fields">
-          <div class="four wide field">
-            <input type="email" placeholder="joe@schmoe.com" />
-          </div>
-
-          <div class="four wide field">
-            <input type="tel" placeholder="Phone Number" />
-          </div>
-
-          <div class="two wide field">
-            <div class="ui fluid search selection dropdown">
-              <input type="hidden" name="country" />
-              <i class="dropdown icon"></i>
-              <div class="default text">Select Country</div>
-              <div class="menu countriesDropdown">
-                <div class="item" data-value="af">
-                  <i class="af flag"></i>No countries available
-                </div>
+      <div class="ui padded segment">
+        <div class="ui form">
+          <div class="fields">
+            <div class="sixteen wide field">
+              <div class="ui blue message">
+                <div class="header">Client's contact:</div>
               </div>
             </div>
           </div>
 
-          <div class="six wide field">
-            <div class="ui fluid search selection dropdown">
-              <input type="hidden" name="timezone" />
-              <i class="dropdown icon"></i>
-              <div class="default text">Select Timezone</div>
-              <div class="menu timezonesDropdown">
-                <div class="item" value="0">
-                  No timezones available
+          <div class="ui segment">
+            <div class="ui two column very relaxed grid">
+              <div class="column">
+
+                <div class="fields">
+                  <div class="eight wide field">
+                    <input type="text" name="First Name:" placeholder="First Name" />
+                  </div>
+                  <div class="eight wide field">
+                    <input type="text" name="Last Name:" placeholder="Last Name" />
+                  </div>
                 </div>
+
+                <div class="fields">
+                  <div class="eight wide field">
+                    <input type="email" name="Email:" placeholder="joe@schmoe.com" />
+                  </div>
+
+                  <div class="eight wide field">
+                    <input type="tel" name="Phone Number:" placeholder="Phone Number" />
+                  </div>
+                </div>
+
+                <div class="fields">
+                  <div class="four wide field">
+                    <div class="ui fluid search selection dropdown">
+                      <input type="hidden" name="Country:" />
+                      <i class="dropdown icon"></i>
+                      <div class="default text">Select Country</div>
+                      <div class="menu countriesDropdown">
+                        <div class="item" data-value="af">
+                          <i class="af flag"></i>No countries available
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="twelve wide field">
+                    <div class="ui fluid search selection dropdown">
+                      <input type="hidden" name="Timezone:" />
+                      <i class="dropdown icon"></i>
+                      <div class="default text">Select Timezone</div>
+                      <div class="menu timezonesDropdown">
+                        <div class="item" value="0">
+                          No timezones available
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
+              <div class="column">
+
+                <div class="fields">
+                  <div class="eight wide field">
+                    <input type="text" name="First Name:" placeholder="First Name" />
+                  </div>
+                  <div class="eight wide field">
+                    <input type="text" name="Last Name:" placeholder="Last Name" />
+                  </div>
+                </div>
+
+                <div class="fields">
+                  <div class="eight wide field">
+                    <input type="email" name="Email:" placeholder="joe@schmoe.com" />
+                  </div>
+
+                  <div class="eight wide field">
+                    <input type="tel" name="Phone Number:" placeholder="Phone Number" />
+                  </div>
+                </div>
+
+                <div class="fields">
+                  <div class="four wide field">
+                    <div class="ui fluid search selection dropdown">
+                      <input type="hidden" name="Country:" />
+                      <i class="dropdown icon"></i>
+                      <div class="default text">Select Country</div>
+                      <div class="menu countriesDropdown">
+                        <div class="item" data-value="af">
+                          <i class="af flag"></i>No countries available
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="twelve wide field">
+                    <div class="ui fluid search selection dropdown">
+                      <input type="hidden" name="Timezone:" />
+                      <i class="dropdown icon"></i>
+                      <div class="default text">Select Timezone</div>
+                      <div class="menu timezonesDropdown">
+                        <div class="item" value="0">
+                          No timezones available
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="ui vertical divider">
+              or
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Tech contact need to make it to be added by JS from the extra file-->
-        <div class="ui padded segment">
-          <div class="ui form">
-            <div class="fields">
-              <div class="sixteen wide field">
-                <div class="ui green message">
-                  <div class="header">Technical contact:</div>
-                </div>
+
+      <!-- Tech contact need to make it to be added by JS from the extra file-->
+      <div class="ui padded segment">
+        <div class="ui form">
+          <div class="fields">
+            <div class="sixteen wide field">
+              <div class="ui green message">
+                <div class="header">Technical contact:</div>
               </div>
             </div>
+          </div>
 
+          <div class="ui center aligned basic segment">
             <div class="fields">
               <div class="eight wide field">
-                <input type="text" placeholder="First Name" />
+                <input type="text" name="First Name:" placeholder="First Name" />
               </div>
               <div class="eight wide field">
-                <input type="text" placeholder="Last Name" />
+                <input type="text" name="Last Name:" placeholder="Last Name" />
               </div>
             </div>
 
             <div class="fields">
               <div class="four wide field">
-                <input type="email" placeholder="joe@schmoe.com" />
+                <input type="email" name="Email:" placeholder="joe@schmoe.com" />
               </div>
 
               <div class="four wide field">
-                <input type="tel" placeholder="Phone Number" />
+                <input type="tel" name="Phone Number:" placeholder="Phone Number" />
               </div>
 
               <div class="two wide field">
                 <div class="ui fluid search selection dropdown">
-                  <input type="hidden" name="country" />
+                  <input type="hidden" name="Country:" />
                   <i class="dropdown icon"></i>
                   <div class="default text">Select Country</div>
                   <div class="menu countriesDropdown">
@@ -210,7 +280,7 @@
 
               <div class="six wide field">
                 <div class="ui fluid search selection dropdown">
-                  <input type="hidden" name="timezone" />
+                  <input type="hidden" name="Timezone:" />
                   <i class="dropdown icon"></i>
                   <div class="default text">Select Timezone</div>
                   <div class="menu timezonesDropdown">
@@ -221,169 +291,227 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <!-- Live date and reason should be on the same line and date must be 2cells wide not more -->
+            <div class="ui horizontal divider">
+              Or
+            </div>
 
-        <div class="ui padded segment">
-          <div class="ui form">
             <div class="fields">
-              <div class="sixteen wide field">
-                <div class="ui attached message">
-                  <div class="header">Client's Expected Live Date:</div>
+              <div class="eight wide field">
+                <input type="text" name="First Name:" placeholder="First Name" />
+              </div>
+              <div class="eight wide field">
+                <input type="text" name="Last Name:" placeholder="Last Name" />
+              </div>
+            </div>
+
+            <div class="fields">
+              <div class="four wide field">
+                <input type="email" name="Email:" placeholder="joe@schmoe.com" />
+              </div>
+
+              <div class="four wide field">
+                <input type="tel" name="Phone Number:" placeholder="Phone Number" />
+              </div>
+
+              <div class="two wide field">
+                <div class="ui fluid search selection dropdown">
+                  <input type="hidden" name="Country:" />
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Select Country</div>
+                  <div class="menu countriesDropdown">
+                    <div class="item" data-value="af">
+                      <i class="af flag"></i>No countries available
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="six wide field">
+                <div class="ui fluid search selection dropdown">
+                  <input type="hidden" name="Timezone:" />
+                  <i class="dropdown icon"></i>
+                  <div class="default text">Select Timezone</div>
+                  <div class="menu timezonesDropdown">
+                    <div class="item" value="0">
+                      No timezones available
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="fields">
-              <div class="two wide field">
-                <input type="date" />
-              </div>
-              <div class="fourteen wide field">
-                <textarea rows="1" placeholder="Add Live Date Reasons outline here..."></textarea>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="ui padded segment">
-          <div class="ui form">
-            <div class="field">
-              <div class="ui attached message">
-                <div class="header">Special Workflow:</div>
-              </div>
-              <textarea rows="3" placeholder="Add special workflow outline here or add links..."></textarea>
-            </div>
-          </div>
-        </div>
-
-        <div class="ui padded segment">
-          <div class="ui form">
-            <div class="field">
-              <div class="ui attached message">
-                <div class="header">Estimated Work:</div>
-              </div>
-
-              <div class="ui blue message">
-                <strong><a href="https://sergeygermanov.github.io/ConnectionEstimator/index.html" target="_blank"
-                    rel="noopener noreferrer">Click Here</a></strong>
-                to open the Estimator tool
-              </div>
-
-              <textarea placeholder="Add the results from the Estimator..."></textarea>
-            </div>
-          </div>
-        </div>
-
-        <button class="fluid ui button" id="btn">Generate SoW</button>
-
-        <!-- to do: (Sergey) -->
-        <!-- must be created after pressing the "Generate Button" -->
-        <!-- should look nice could be with cin7 logo -->
-
-        <div class="ui positive message" id="pdfSave">
-          <a class="ui teal right corner label">
-            <i class="copy link icon"></i>
-          </a>
-          <div class="header">NAME:</div>
-          <div>PaulackFurnitureNZ Briscoes Group</div>
-          <br />
-
-          <div class="header">Cin7 IE/AI:</div>
-          <div>
-            Name: Tim Proctor <br />
-            Email: tim.proctor@gmail.com <br />
-            Timezone: GMT-06
-          </div>
-          <br />
-
-          <div>
-            <div class="header">CLIENT'S CONTACT:</div>
-            <div>
-              Name: Miles Morales <br />
-              Email: spider.man@gmail.com <br />
-              Phone: +155522235 <br />
-              Country: Jamaica <br />
-              Timezone: GMT-06
-            </div>
           </div>
 
-          <br />
 
-          <div class="header">TECHNICAL CONTACT:</div>
-          <div>
-            Name: THOR <br />
-            Email: viking@gmail.com <br />
-            Phone: +4155522235 <br />
-            Country: Stockholm <br />
-            Timezone: GMT+4
-          </div>
-          <br />
-
-          <div class="header">CLIENT'S EXPECTED LIVE DATE:</div>
-          <div>25/10/2023<br /></div>
-          <br />
-
-          <div class="header">SPECIAL WORKFLOW:</div>
-          <div>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
-            ipsa aliquid, possimus aliquam dicta temporibus consequuntur maxime
-            veritatis saepe quaerat corporis? Ab quod vel quam, totam impedit
-            molestiae reiciendis illum? Magni necessitatibus fugit impedit iure
-            distinctio rem facilis enim voluptates, harum velit hic dolorem
-            dolorum quis ipsum consequatur totam nemo ut minima culpa. Animi
-            inventore deleniti ipsam ex amet ab!
-          </div>
-          <br />
-
-          <div class="header">ESTIMATED WORK:</div>
-          <div>
-            Direct/Dropship: Direct<br />EDI Standards/Versions: X12 (version
-            4010)<br />Integration Type: FTP (hosted by us or retailer)<br />Mapping:
-            Don't need changes<br />Compliance: Portal based<br />Required
-            Messages: || 850 (ORDERS) <br />Product type: || FIFO <br />Date of
-            estimation: 13-Oct-2022<br />Complexity: 18% of 100%<br />Weeks: 2.1
-            of 12
-          </div>
-
-          <br />
-
-          <div class="header">TERMS AND CONDITIONS:</div>
-          <div>
-            <!-- Sergey -->
-            <!-- Ideally given by Techwriter before adding it needs to go through John-->
-            <!-- this must be standart for any connection -->
-            <!-- Must include the channels for support tickets -->
-
-            <p> response any party for a week -> put on hold</p>
-            <p> post live support - 2 weeks after the completion of work from EDI/3PL
-              side</p>
-            <p> go live dates needs special agreement</p>
-            <p> support - after 2 weeks - go to Suppport team </p>
-            <p>support - building time - IE/IA </p>
-            <p> support - definition of our area of support</p>
-            <p> support team responsibilities - who is responsible for what and how
-              to raise the ticket </p>
-            <p>SLA during building stage - 72 hours both sides </p>
-            <p> add new connections - Upgrades / Bijal (APAC) / Christian (US) </p>
-          </div>
-          <br />
-        </div>
-
-        <!-- fix the issue with PDF conversion -->
-        <!-- open in a new window instead of doqnloading immediatelly -->
-        <!-- Tim - look into this -->
-
-        <div class="fluid ui vertical animated button" tabindex="0" onclick="generatePDF()">
-          <div class="hidden content">PDF <i class="file pdf icon"></i></div>
-          <div class="visible content">Download</div>
         </div>
       </div>
-      <script src="/countries.js"></script>
-      <script src="/timezones.js"></script>
-      <script src="/scripts.js"></script>
+
+
+      <!-- Live date and reason should be on the same line and date must be 2cells wide not more  === done-->
+
+      <div class="ui padded segment">
+        <div class="ui form">
+          <div class="fields">
+            <div class="sixteen wide field">
+              <div class="ui attached message">
+                <div class="header">Client's Expected Live Date:</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fields">
+            <div class="two wide field">
+              <input type="date" name="Expected Live Date:" />
+            </div>
+            <div class="fourteen wide field">
+              <textarea name="Live Date Reasons:" rows="1"
+                placeholder="Add Live Date Reasons outline here..."></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="ui padded segment">
+        <div class="ui form">
+          <div class="field">
+            <div class="ui attached message">
+              <div class="header">Special Workflow:</div>
+            </div>
+            <textarea name="Special Workflow:" rows="3"
+              placeholder="Add special workflow outline here or add links..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui padded segment">
+        <div class="ui form">
+          <div class="field">
+            <div class="ui attached message">
+              <div class="header">Estimated Work:</div>
+            </div>
+
+            <div class="ui blue message">
+              <strong><a href="https://sergeygermanov.github.io/ConnectionEstimator/index.html" target="_blank"
+                  rel="noopener noreferrer">Click Here</a></strong>
+              to open the Estimator tool
+            </div>
+
+            <textarea name="Estimated Work:" placeholder="Add the results from the Estimator..."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="fluid ui button" id="btn">Generate SoW</button>
+  </form>
+
+  <!-- to do: (Sergey) -->
+  <!-- must be created after pressing the "Generate Button" -->
+  <!-- should look nice could be with cin7 logo -->
+  <div id="summary"></div>
+
+  <!-- <div class="ui positive message" id="pdfSave">
+    <a class="ui teal right corner label">
+      <i class="copy link icon"></i>
+    </a>
+    <div class="header">NAME:</div>
+    <div>PaulackFurnitureNZ Briscoes Group</div>
+    <br />
+
+    <div class="header">Cin7 IE/AI:</div>
+    <div>
+      Name: Tim Proctor <br />
+      Email: tim.proctor@gmail.com <br />
+      Timezone: GMT-06
+    </div>
+    <br />
+
+    <div>
+      <div class="header">CLIENT'S CONTACT:</div>
+      <div>
+        Name: Miles Morales <br />
+        Email: spider.man@gmail.com <br />
+        Phone: +155522235 <br />
+        Country: Jamaica <br />
+        Timezone: GMT-06
+      </div>
+    </div>
+
+    <br />
+
+    <div class="header">TECHNICAL CONTACT:</div>
+    <div>
+      Name: THOR <br />
+      Email: viking@gmail.com <br />
+      Phone: +4155522235 <br />
+      Country: Stockholm <br />
+      Timezone: GMT+4
+    </div>
+    <br />
+
+    <div class="header">CLIENT'S EXPECTED LIVE DATE:</div>
+    <div>25/10/2023<br /></div>
+    <br />
+
+    <div class="header">SPECIAL WORKFLOW:</div>
+    <div>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+      ipsa aliquid, possimus aliquam dicta temporibus consequuntur maxime
+      veritatis saepe quaerat corporis? Ab quod vel quam, totam impedit
+      molestiae reiciendis illum? Magni necessitatibus fugit impedit iure
+      distinctio rem facilis enim voluptates, harum velit hic dolorem
+      dolorum quis ipsum consequatur totam nemo ut minima culpa. Animi
+      inventore deleniti ipsam ex amet ab!
+    </div>
+    <br />
+
+    <div class="header">ESTIMATED WORK:</div>
+    <div>
+      Direct/Dropship: Direct<br />EDI Standards/Versions: X12 (version
+      4010)<br />Integration Type: FTP (hosted by us or retailer)<br />Mapping:
+      Don't need changes<br />Compliance: Portal based<br />Required
+      Messages: || 850 (ORDERS) <br />Product type: || FIFO <br />Date of
+      estimation: 13-Oct-2022<br />Complexity: 18% of 100%<br />Weeks: 2.1
+      of 12
+    </div>
+
+    <br />
+
+    <div class="header">TERMS AND CONDITIONS:</div>
+    <div>
+      <!-- Sergey -->
+  <!-- Ideally given by Techwriter before adding it needs to go through John-->
+  <!-- this must be standart for any connection -->
+  <!-- Must include the channels for support tickets -->
+
+  <!-- <p> response any party for a week -> put on hold</p>
+  <p> post live support - 2 weeks after the completion of work from EDI/3PL
+    side</p>
+  <p> go live dates needs special agreement</p>
+  <p> support - after 2 weeks - go to Suppport team </p>
+  <p>support - building time - IE/IA </p>
+  <p> support - definition of our area of support</p>
+  <p> support team responsibilities - who is responsible for what and how
+    to raise the ticket </p>
+  <p>SLA during building stage - 72 hours both sides </p>
+  <p> add new connections - Upgrades / Bijal (APAC) / Christian (US) </p>
+  </div>
+  <br />
+  </div> -->
+
+  <!-- fix the issue with PDF conversion -->
+  <!-- open in a new window instead of doqnloading immediatelly -->
+  <!-- Tim - look into this -->
+
+  <!-- <div class="fluid ui vertical animated button" tabindex="0" onclick="generatePDF()">
+    <div class="hidden content">PDF <i class="file pdf icon"></i></div>
+    <div class="visible content">Download</div>
+  </div>
+  </div> -->
+  <script src="/countries.js"></script>
+  <script src="/timezones.js"></script>
+  <script src="/scripts.js"></script>
 </body>
 
 </html>
